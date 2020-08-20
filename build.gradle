@@ -38,6 +38,10 @@ allprojects {
             // ProtocolLib
             url "http://repo.dmulloy2.net/nexus/repository/public/"
         }
+        maven {
+            // PlaceholderAPI
+            url = "https://repo.extendedclip.com/content/repositories/placeholderapi/"
+        }
     }
 
     processResources {
@@ -58,6 +62,7 @@ dependencies {
     shadow 'com.github.MilkBowl:VaultAPI:1.7'
     compile 'com.github.WesJD.AnvilGUI:anvilgui:master-SNAPSHOT'
     shadow 'com.comphenix.protocol:ProtocolLib:4.4.0'
+    shadow  'me.clip:placeholderapi:2.10.6'
     compile project('Support-WorldEdit-6')
     compile project('Support-WorldEdit-7')
 }
